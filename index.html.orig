@@ -129,9 +129,9 @@
 				<section>
 					<h2>Mozilla Thimble</h2>
 					<p>In your browser, go to <a href="https://webmaker.org">Webmaker.org</a></p>
-					<p>Look for a project called "Movie Poster   #movieposter". Click on this project.</p>
+					<p>Look for a project called "pics from my last trip". It looks like a photo of trees, and has a red "Starter Project" banner on it. Click on this project.</p>
 					<p>Click the "Remix" button in the top right of the project page.</p>
-					<img src="img/movie-poster-hack.png"/>
+					<img src="http://cl.ly/QDx8/Screen%20Shot%202013-07-13%20at%205.33.26%20PM.png"/>
 				</section>
 
 				<section>
@@ -153,21 +153,19 @@
 				<section>
 					<h2>Let's start customizing our code!</h2>
 					<ul>
-						<li>Remember our 6 kinds of headings? Let's look for the biggest one and change it.</li> 
-						<li>Look for the part of your code that says <code>&lt;h1>The Sunset&lt;/h1></code></li>
-						<li>Change the text <strong>between</strong> the two tags to your new movie name </li>
+						<li>Remember our 6 kinds of headings? Let's look for the biggest one and change it. Right now, the <code>&lt;h1></code> tag shows the initials "JB". </li>
+						<li>Look for the part of your code that says <code>&lt;h1 class="logo">JB&lt;/h1></code></li>
+						<li>Change the text <strong>between</strong> the two tags to whatever you like: some initials, your group name, or the name of your website</li>
 						<li>Watch the changes happen in the preview window on the right side!</li>
 					</ul>
 				</section>
 
 				<section>
 					<ul>
-						<li>Next, let's change the subtitle into something more appropriate for your movie.</li>
-						<li>Look for the part of code that says <code>&lt;h2>Just when you thought it was safe to go outside &lt;/h2></code></li>
-						<li>Change the text <strong>between</strong> the two <code>&lt;h2></code> tags to your own subtitle</li>
-						<li>Repeat the same process for some of the information in the reviews. These are stored in paragraphs <code>&lt;p></code> tags</li>
-						<li>DO NOT change the actors and directors yet. </li>
-
+						<li>Next, let's change the title that says "My Photographs" into something else, like an introduction to your website or a welcome message</li>
+						<li>Look for the part of code that says <code>&lt;h2 class="title">My Photographs&lt;/h2></code></li>
+						<li>Change the text <strong>between</strong> the two <code>&lt;h2></code> tags to your own title</li>
+						<li>Repeat the same process for the first paragraph on the page (remember, those are <code>&lt;p></code> tags)</li>
 					</ul>
 				</section>
 
@@ -184,19 +182,19 @@
 						<ul>
 						<pre class=""><code>&lt;a href="http://google.com">Google&lt;/a></code></pre>
 
-						<li>This part that says "href" is called an attribute. An attribute gives the browser extra information about the element you want to make. In this case, the information we want to tell the browser is the link's hypertext-reference.</li>
-						<li>It sounds like a confusing term, but really it just means "URL address", like the address that you see in the bar at the top of your browser. This anchor tag <code>&lt;a></code> has an attribute that tells the browser that when someone clicks on the link, they should go to the address google.com</li>
+						<li>This part that says "h-ref" is called an attribute. An attribute gives the browser extra information about the element you want to make. In this case, the information we want to tell the browser is the link's hypertext-reference.</li>
+						<li>It sounds like a confusing term, but really it just means "address", like the address that you see in the bar at the top of your browser. This link has an attribute that tells the browser that when someone clicks on the link, they should go to the address google.com</li>
 						</ul>
 				</section>
 
 				<section>
 					<h2>Let's add a link</h2>
 					<ul>
-						<li>We're going to add a link to Google so viewers can easily search for review about your great movie!</li>
-						<li>Underneath your subtitle, add an anchor tag like the one below.</li>
-						<pre class=""><code>&lt;a href="http://google.com">Google Review&lt;/a></code></pre>
-						<li>The href part is the URL address.</li>
-						<li>The part that says "Google Review" is the part people will click on.</li>
+						<li>We're going to make a link to the interview you wrote.</li>
+						<li>Underneath your paragraph, add an anchor tag like the one below.</li>
+						<pre class=""><code>&lt;a href="http://google.com">My Interview&lt;/a></code></pre>
+						<li>Replace the part that says "http://google.com" (the part <strong>inside</strong> the quotation marks) with the link to your interview.</li>
+						<li>Replace the part that says "My Interview" with the title of your interview (that's the part people will click on)</li>
 					</ul>
 				</section>
 
@@ -205,18 +203,17 @@
 					<p class="">Images are like hyperlinks because they also use an <strong>attribute</strong> to tell the browser a web address</p>
 					<pre class=""><code>&lt;img src="http://ladieslearningcode.com/wp-content/uploads/2013/02/IMG_3800.jpg" /></code></pre>
 					<p class="">Instead of an <code>href</code> attribute, an image has a <code>src</code> attribute, which tells the browser the <strong>source</strong> of the image</p>
-						<p>The source of the image tells the browser where to look for the picture. The browser then goes and gets the image from the source you tell it, and displays it in the web page. </p>
+						<p>The soure of the image tells the browser where to look for the picture. The browser then goes and gets the image from the source you tell it, and displays it in the web page. </p>
 				</section>
 
 				<section>
-					<h2>Two ways to add an image</h2>
+					<h2>Let's add an image</h2>
 					<ul>
-						<li>This movie poster uses a "background-image" which sits behind all the text,
-						but we won't cover this until we learn CSS.</li>
-						<li>The HTML tag for an image is <code>img</code>.</li>
-						<pre><code>&lt;img src="http://farm8.staticflickr.com/somepix.jpg"></code></pre>
-						<li>The URL goes after the <code>src</code> attribute.</li>
-						<li>NOTE! There is NOT a closing tag for <code>img</code> (i.e. there is no <code>&lt;/img></code>)</li>
+						<li>We're going to replace the first tree picture with an animated gif.</li>
+						<li>Find the part in the code that says:</li>
+						<pre><code>&lt;img src="http://farm8.staticflickr.com/...jpg"></code></pre>
+						<li>And replace the src value with the link to your animated gif</li>
+						<pre><code>&lt;img src="http://flickr.com/cat.gif"></code></pre>
 					</ul>
 				</section>
 
@@ -239,10 +236,12 @@
 				</section>
 
 				<section>
-					<h2>Add Actors!</h2>
+					<h2>Add in your crests!</h2>
 					<ul>
-						<li>We're going to add in a few more actors and actresses.</li>
-						<li>Find the unordered list tag looks like <code>&lt;ul></code></li>
+						<li>We're going to add in the crests where the landscape photos are</li>
+						<li>Since there are only two landscape photos, we'll have to duplicate the section 2 times to make room for all 6 crests</li>
+						<li>The landscape pictures are inside an <strong>unordered list</strong></li>
+						<li>The unordered list tag looks like <code>&lt;ul></code></li>
 						<li>Each list item inside the unordered list is a <code>&lt;li></code> tag</li>
 					</ul>
 				</section>
@@ -258,6 +257,38 @@
 	&lt;li>Second list item!&lt;/li>
 &lt;/ul>
 </code></pre>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Duplicate two list items</h2>
+					<ul>
+						<li>Look for the part in the code that has a comment that says "A Picture".</li>
+						<li><strong>Copy</strong> everything between the two <code>&lt;ul></code> tags</li>
+						<li>You should start selecting right <strong>after</strong> the part that looks like </li>
+						<pre><code>&lt;ul class="grid half-width group"></code></pre>
+						<li>And end right <strong>before</strong> the part that looks like:</li>
+						<pre><code>&lt;ul></code></pre>
+					</ul>
+				</section>
+
+				<section>
+					<ul>
+						<li>Next, <strong>Paste</strong> those two list items right before the <code>&lt;/ul></code> tag (the end of the unodered list)</li>
+						<li>Do this twice, so that we now have 6 list items</li>
+						<li>Next, replace the <code>src</code> values for each image with the links to your crests</li>
+						<li>You can replace the text between each of the <code>&lt;h2></code> tags with your names!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Add your logo!</h2>
+					<ul>
+						<li>If you want the logo for your site to be more exciting, why not replace it with the logo picture you made!</li>
+						<li>Find the <code>&lt;h2></code> tag that we changed earlier (the part in the green circle)</li>
+						<li><strong>Delete</strong> the <code>&lt;h2></code> tag</li>
+						<li>Add in a <code>&lt;img></code> tag, and make the src value the link to your logo</code></li>
+						<pre><code>&lt;img src="http://flickr.com/logo.png" ></code></pre>
 					</ul>
 				</section>
 
