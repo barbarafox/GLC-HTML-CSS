@@ -350,22 +350,17 @@
 						<li><code>&lt;body&gt;</code> contains all the content on the page</li>
 						<li>White is boring, so let's change it to purple</li>
 					</ul>
-<!--					<ul>
-						<li>At the very top of our website, there's a grey background behind our logo</li>
-						<li>Grey is boring, change it to your favourite color!</li>
-						<li>Find the selector for the <code>&lt;header></code> element</li>
-					</ul>
--->
+
 				</section>
 
 				<section>
 <pre><code>
  body {
         background-color:purple
-      }
+ }
 </code></pre>					
 				<ul>
-					<li>This code means that the <code>&lt;header></code> element will have a <code>background</code> that is <code>purple</code></li>
+					<li>This code means that the <code>&lt;body></code> element will have a <code>background</code> that is <code>purple</code></li>
 					<li><code>#A020F0</code> is a <strong>hex</strong> code. It's a code that means purple. <br>
 					See <a href="http://www.w3schools.com/cssref/css_colornames.asp">HTML Colors</a> for more colors.</li>
 					
@@ -374,53 +369,82 @@
 
 				<section>
 <pre><code>
-header {
-	background: red;
-}
+ body {
+        background-color:purple
+ }
 </code></pre>
 					<ul>
 						<li>You can try all sorts of colors here: pink, blue, green, black, and more</li>
 						<li>If you want to get a specific shade of your favourite color, you'll need a <strong>hex code</strong></li>
-						<li>You can find hex codes for colors at <a href="http://www.colorpicker.com/">colorpicker.com</a></li>
+						<li>You can also find hex codes for colors at 
+						
+						<a href="http://www.w3schools.com/tags/ref_colorpicker.asp">W3 Schools Color Picker</a> or 
+						<a href="http://www.colorpicker.com/">colorpicker.com</a></li>
 					</ul>					
 				</section>
 
 				<section>
-					<p>How would we change the background color of the whole page?</p>
-					<p>Remember how the <code>&lt;body></code> element holds <strong>all</strong> the content on our page?</p>
-					<p>Find the selector for the <code>body</code> element and change the background color</p>
+					<p>How would we change the background color of just the <code>&lt;h3&gt;</code> ?</p>
+					
 <pre class=""><code>
-body {
-	background: #CCF2FF;
+h3 {
+	background: #FFFFFF;
 }
 </code></pre>					
 				</section>
 
-<!--
 				<section>
-					<h2>Changing Fonts</h2>
+					<h2>Let's change the subheading for Secret Identity to yellow</h2>
 					<ul>
-						<li>In the CSS rules for the <code>body</code>, there's a <code>font-family</code> property.</li>
-						<li>Right now the font is set to <em>Georgia</em></li>
-						<li>You can change the font to <code>Arial, Helvetica, Times, Verdana, Courier, or Impact</code></li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Let's change our main heading</h2>
-					<ul>
-						<li>Remember how we changed the text of the <code>&lt;h2 class="title"></code>?</li>
-						<li>Now let's change the style</li>
-						<li>Find the selector for <code>h2.title</code></li>
+						<li>Find the selector for the Secret Identity</li>
+						<li>It is an <code>h2</code></li>
 						<li>We can change the text color with the <code>color</code> property</li>
 <pre><code>
-h2.title {
-	color: darkblue;
+h2 {
+	color: yellow;
 }
 </code></pre>						
 					</ul>
 				</section>
--->
+				
+				<section>
+					<ul>
+						<li>How would I change the size of the image?</li>
+						<li>The HTML of an image is </li><code>img</code></li>
+						<li>The CSS to change the width is called<code>width</code></li>
+<pre><code>
+img {
+	width: 400px;
+}
+</code></pre>
+					</ul>
+				</section>
+				
+				<section>
+					<ul>
+						<li>How would I add a border around the image?</li>
+						<li>The CSS to change the width is called<code>border</code></li>
+						<li>It takes a border-width, a border-color, and a border-style</li>
+						<li>Read all about these at 
+						<a href="http://www.w3schools.com/css/css_border.asp">W3 Schools CSS Borders</a></li>
+					</ul>
+				</section>
+				
+				<section>
+<pre><code>
+img {
+	border: 30px solid blue;
+}
+</code></pre>
+<br>
+<pre><code>
+img {
+      	border:30px orange outset;
+}
+					
+					
+				</section>
+				
 				<section>
 					<ul>
 						<li>We can make the font be not italic by changing the <code>font-style</code> value to <code>normal</code></li>
@@ -429,14 +453,20 @@ h2.title {
 					</ul>
 				</section>
 
+
+				<section>
+					<ul>Practice and learn CSS from
+						<a href="http://www.w3schools.com/css/css_examples.asp">W3 Schools CSS Examples</a>
+					</ul>
+					
+				</section>
+				
 				<section>
 					<h2>Have fun with HTML and CSS</h2>
 					<ul>
-						<li>Try adding more content: replace all the default text with your own writing</li>
-						<li>Replace images with pictures that are relevant to your topic</li>
 						<li>Customize the way your site works by changing CSS properties</li>
-						<li>Hover your mouse over a section in the preview to find the HTML code for that section</li>
-						<li>Then try to find the matching selector in the CSS!</li>
+						<li>Share your discoveries with your neighbors</li>
+						<li>Make your page look great and I'll publish it next week on my website!</li>
 					</ul>
 				</section>
 
