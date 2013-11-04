@@ -319,20 +319,21 @@
 				<section>
 					<p>CSS goes in between <code>&lt;style></code> tags in our HTML</p>
 					<p>This lets the browser know that we're writing CSS now, not HTML</p>
-					<p>Look for the <code>&lt;style></code> tags at the end of the HTML document in thimble</p>
+					<p>(<code>&lt;style></code> usually goes in the &lt;head&gt; section, but in thimble remixing<br>
+					it is often at the end of the HTML document)</p>
 				</section>
 
 				<section>
 					<h2>CSS Selectors</h2>
 					<ul>
-						<li>There are several different ways you can target HTML elements to change their styles</li>
+						<li>There are several different ways you can specify HTML elements to change their styles</li>
 						<li>We can select elements by the kind of element, for example, we can select all paragraphs with:</li>
 						<pre><code>p {}</code></pre>												
 					</ul>
 				</section>
 
 
-<!-- 
+<!-- 	
 				<section>
 					<ul>
 						<li>You might have noticed in the HTML that some of the elements have an attribute called a <code>class</code></li>
@@ -344,7 +345,11 @@
 				</section>
 -->
 				<section>
-					<h2>Let's change the background of our header</h2>
+					<h2>Let's change the background of our super hero page</h2>
+					<ul>
+						<li><code>&lt;body&gt;</code> contains all the content on the page</li>
+						<li>White is boring, so let's change it to purple</li>
+					</ul>
 <!--					<ul>
 						<li>At the very top of our website, there's a grey background behind our logo</li>
 						<li>Grey is boring, change it to your favourite color!</li>
@@ -355,15 +360,15 @@
 
 				<section>
 <pre><code>
-header {
-	background: #e0e0e0;
-}
+ body {
+        background-color:purple
+      }
 </code></pre>					
 				<ul>
-					<li>This code means that the <code>&lt;header></code> element will have a <code>background</code> that is <code>#e0e0e0</code></li>
-					<li><code>#e0e0e0</code> is a <strong>hex</strong> code. It's a code that means a color in computer language. In this case, it means light grey.</li>
-					<li><strong>Delete</strong> the part that says <code>#e0e0e0</code> and write the word <strong>red</strong></li>
-					<li>Make sure you leave the colon and semi-colon where they were.</li>
+					<li>This code means that the <code>&lt;header></code> element will have a <code>background</code> that is <code>purple</code></li>
+					<li><code>#A020F0</code> is a <strong>hex</strong> code. It's a code that means purple. <br>
+					See <a href="http://www.w3schools.com/cssref/css_colornames.asp">HTML Colors</a> for more colors.</li>
+					
 				</ul>
 				</section>
 
