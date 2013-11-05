@@ -326,9 +326,9 @@
 				<section>
 					<h2>CSS Selectors</h2>
 					<ul>
-						<li>There are several different ways you can specify HTML elements to change their styles</li>
-						<li>We can select elements by the kind of element, for example, we can select all paragraphs with:</li>
-						<pre><code>p {}</code></pre>												
+						<li>One way to specify HTML elements is by using their tag</li>
+						<li>For example, we can select all paragraphs with:</li>
+						<pre><code>p { }</code></pre>												
 					</ul>
 				</section>
 
@@ -361,7 +361,8 @@
 </code></pre>					
 				<ul>
 					<li>This code means that the <code>&lt;body></code> element will have a <code>background</code> that is <code>purple</code></li>
-					<li><code>#A020F0</code> is a <strong>hex</strong> code. It's a code that means purple. <br>
+					<li>Strangely enough, we could also use the color <code>#A020F0</code> which 
+					is a <strong>hex</strong> code that means purple. <br>
 					See <a href="http://www.w3schools.com/cssref/css_colornames.asp">HTML Colors</a> for more colors.</li>
 					
 				</ul>
@@ -375,7 +376,7 @@
 </code></pre>
 					<ul>
 						<li>You can try all sorts of colors here: pink, blue, green, black, and more</li>
-						<li>If you want to get a specific shade of your favourite color, you'll need a <strong>hex code</strong></li>
+						<li>If you want to get a specific shade of your favorite color, you'll need a <strong>hex code</strong></li>
 						<li>You can also find hex codes for colors at 
 						
 						<a href="http://www.w3schools.com/tags/ref_colorpicker.asp">W3 Schools Color Picker</a> or 
@@ -384,7 +385,11 @@
 				</section>
 
 				<section>
-					<p>How would we change the background color of just the <code>&lt;h3&gt;</code> ?</p>
+					<h2>Changing one heading to a white background</h2>
+					<ul>
+					  <li>The black text on the purple background would stand out better on a white background</li>
+					  <li>The HTML code for my subheading is <code>&lt;h3&gt;</code></li>
+					  <li>The CSS hex code for white is <code>&lt;#FFFFFF&gt;</code></li>
 					
 <pre><code>
 h3 {
@@ -394,7 +399,7 @@ h3 {
 				</section>
 
 				<section>
-					<h2>Let's change the subheading for Secret Identity to yellow</h2>
+					<h2>Changing Secret Identity text to yellow</h2>
 					<ul>
 						<li>Find the selector for the Secret Identity</li>
 						<li>It is an <code>h2</code></li>
@@ -410,8 +415,8 @@ h2 {
 				<section>
 					<ul>
 						<li>How would I change the size of the image?</li>
-						<li>The HTML of an image is </li><code>img</code></li>
-						<li>The CSS to change the width is called<code>width</code></li>
+						<li>The HTML of an image is <code>img</code></li>
+						<li>The CSS to change the width is called <code>width</code></li>
 <pre><code>
 img {
 	width: 400px;
@@ -421,10 +426,10 @@ img {
 				</section>
 				
 				<section>
+					<h2>Adding a border around an image</h2>
 					<ul>
-						<li>How would I add a border around the image?</li>
-						<li>The CSS to change the width is called<code>border</code></li>
-						<li>It takes a border-width, a border-color, and a border-style</li>
+						<li>The CSS to change the width is called <code>border</code></li>
+						<li>It takes a border-width, a border-style, and a border-color</li>
 						<li>Read all about these at 
 						<a href="http://www.w3schools.com/css/css_border.asp">W3 Schools CSS Borders</a></li>
 					</ul>
@@ -439,26 +444,26 @@ img {
 <br>
 <pre><code>
 img {
-      	border:30px orange outset;
+      	border:30px outset orange;
 }
 </pre></code>
 					
 					
 				</section>
-				
-				<section>
 					<ul>
-						<li>We can make the font be not italic by changing the <code>font-style</code> value to <code>normal</code></li>
-						<li>We can make it bold setting the <code>font-weight</code> property to <code>bold</code></li>
 						<li>We can make the text bigger by changing the <code>font-size</code> property to something like <code>34px</code></li>
 					</ul>
+<pre><code>
+h1 {
+      	font-size:34px;
+}
+</pre></code>
 				</section>
 
-
 				<section>
-					<ul>Practice and learn CSS from
+					<h2>Practice and learn CSS from
 						<a href="http://www.w3schools.com/css/css_examples.asp">W3 Schools CSS Examples</a>
-					</ul>
+					</h2>
 					
 				</section>
 				
