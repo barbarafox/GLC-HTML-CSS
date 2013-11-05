@@ -25,6 +25,13 @@
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
 
+		<!-- Barbara Fox extra styles for code to enlarge it -->
+		<style>
+			.mycode { 
+				font-size:175%; 
+				padding:1em;
+				}
+		</style>
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -328,7 +335,7 @@
 					<ul>
 						<li>One way to specify HTML elements is by using their tag</li>
 						<li>For example, we can select all paragraphs with:</li>
-						<pre style="font-size:200%;color:pink"><code>p { }</code></pre>												
+						<pre class="mycode"><code>p { }</code></pre>												
 					</ul>
 				</section>
 
